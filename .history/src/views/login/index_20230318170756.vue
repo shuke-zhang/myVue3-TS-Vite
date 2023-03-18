@@ -1,0 +1,18 @@
+<script lang="ts" setup>
+     import request from '@/utils/request';
+const requestRes = async () => {
+    let result = await request({
+        url: '/api/xxx',
+        method: 'get'
+    });
+}
+
+
+</script>
+
+<template>
+    <div>
+        这是登录页
+    </div>
+    <button @click="requestRes">点击获取</button>
+</template>

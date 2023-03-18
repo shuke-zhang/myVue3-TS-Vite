@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    // q: ESNext 是什么语言
+    // a: ESNext 是指下一代的 ECMAScript 语言标准，也就是 ES2020、ES2021 等等
+    // q: ESNext 和 ES6 有什么区别
+
+    // a: 指定编译后的目标语言
+   
+
+    "typeRoots": [
+      "node_modules/@types", // 指定类型文件路径
+      "src/types" // 指定自定义类型文件路径
+    ],
+    "target": "ESNext", // 指定编译后的目标语言 ESNext下一代的 ECMAScript 语言标准，指ES2020、ES2021 等等
+    "useDefineForClassFields": true, // 指定是否使用 defineProperty 来定义类字段
+    "module": "ESNext", // 指定编译后的模块类型
+    "moduleResolution": "Node", // 指定模块解析策略
+    "strict": true, // 开启所有严格模式
+    "jsx": "preserve", // 指定 JSX 的编译模式
+    "sourceMap": true, // 生成源码映射文件
+    "resolveJsonModule": true, // 允许导入 JSON 文件
+    "isolatedModules": true, // 使每个文件都可以独立编译
+    "esModuleInterop": true, // 允许 ES 模块与 CommonJS 模块互相导入
+    "lib": ["ESNext", "DOM"], // 指定要包含在编译中的库文件
+    "skipLibCheck": true, // 跳过对类型声明的检查
+    "noEmit": true, // 不输出编译结果
+    "baseUrl": "./", // 指定模块解析的基准目录
+    "paths": {
+      "@": [
+        "src"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"], // 指定要包含在编译中的文件
+  "references": [{ "path": "./tsconfig.node.json" }] // 指定引用的其他 tsconfig.json 文件
+}
+
