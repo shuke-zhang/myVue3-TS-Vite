@@ -2,10 +2,6 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 const routes: Array<RouteRecordRaw> = [
     {
-        path: '/',
-        redirect: '/login',
-    }, 
-    {
         path: '/login', // 路由地址
         name: 'Login', // 路由名称
         meta: {
@@ -15,8 +11,12 @@ const routes: Array<RouteRecordRaw> = [
             requireAuth: false // 是否需要登录
         },
         component: () => import('@/views/login/index.vue')
+    },
+    // q: 路由重定向
+    {
+        path:any: '/'
+
     }
-    
 ]
 
 const router = createRouter({

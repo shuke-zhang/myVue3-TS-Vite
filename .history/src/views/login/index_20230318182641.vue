@@ -28,10 +28,8 @@ const requestRes = async () => {
 .contaniner {
     width: 100%;
     height: 100%;
-    background: url('@/assets/images/R-C.jpg')  no-repeat;
-    background-size: cover;
-    }
-   
+    background-image: url('@/assets/images/R-C.jpg');
+}
 
 
 

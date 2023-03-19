@@ -20,18 +20,28 @@ const requestRes = async () => {
 
 <template>
     <div class="contaniner">
+        <div class="bgs">
         登录页
+        </div>
     </div>
 </template>
 
 <style lang="less" scoped> 
+body {
+    width: 100%;    
+    height: 100%;
+}
 .contaniner {
     width: 100%;
     height: 100%;
-    background: url('@/assets/images/R-C.jpg')  no-repeat;
-    background-size: cover;
+    .bgs {
+        width: 100%;
+        height: 100%;
+        background-image: url('@/assets/images/R-C.jpg');
+        background-size: cover;
     }
    
+}
 
 
 

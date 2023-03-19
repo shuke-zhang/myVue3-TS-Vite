@@ -20,18 +20,15 @@ const requestRes = async () => {
 
 <template>
     <div class="contaniner">
-        登录页
+        这是登录页
     </div>
+    <button @click="requestRes">点击获取</button>
 </template>
 
 <style lang="less" scoped> 
 .contaniner {
-    width: 100%;
-    height: 100%;
-    background: url('@/assets/images/R-C.jpg')  no-repeat;
-    background-size: cover;
-    }
-   
+    background-image: url('https://steamcommunity.com/sharedfiles/filedetails/?id=1926753164');
+}
 
 
 

@@ -25,11 +25,14 @@ const requestRes = async () => {
 </template>
 
 <style lang="less" scoped> 
+
+      
 .contaniner {
-    width: 100%;
-    height: 100%;
-    background: url('@/assets/images/R-C.jpg')  no-repeat;
-    background-size: cover;
+ 
+        width: 100%;
+        height: 100%;
+      background-image: url('@/assets/images/R-C.jpg')  no-repeat;
+       background-size: cover;
     }
    
 
